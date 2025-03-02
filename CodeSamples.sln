@@ -25,6 +25,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Преобразова
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversions", "Conversions\Conversions.csproj", "{B442159C-DE9C-46BF-B4BB-17A880C8B2EB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Арифметические операции", "06 - Арифметические операции", "{788B6BDF-6DAF-4291-BFCC-0BDBC1FF6CE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArithmeticOperations", "ArithmeticOperations\ArithmeticOperations.csproj", "{320128AD-3949-4157-90C0-83298665A793}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,10 @@ Global
 		{B442159C-DE9C-46BF-B4BB-17A880C8B2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B442159C-DE9C-46BF-B4BB-17A880C8B2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B442159C-DE9C-46BF-B4BB-17A880C8B2EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320128AD-3949-4157-90C0-83298665A793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320128AD-3949-4157-90C0-83298665A793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320128AD-3949-4157-90C0-83298665A793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320128AD-3949-4157-90C0-83298665A793}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +74,7 @@ Global
 		{75DAF005-D05D-4D02-B18F-3A357B9C6996} = {557BE7C3-19F6-4D10-8956-749006EC829A}
 		{E40D0EEE-2A69-4106-88E0-8C5ACFA33046} = {EBC971C8-B386-4F22-BE37-39587B3FC305}
 		{B442159C-DE9C-46BF-B4BB-17A880C8B2EB} = {ECC727D4-0472-4FC3-AF00-59E66DDE0AC2}
+		{320128AD-3949-4157-90C0-83298665A793} = {788B6BDF-6DAF-4291-BFCC-0BDBC1FF6CE7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ABA95942-5619-4EAB-BB10-ECFCD9CA2AFA}
