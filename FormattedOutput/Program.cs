@@ -1,31 +1,20 @@
-﻿/*Немного про консоль*/
-
-Console.WriteLine("Я пишу на экране");
-var input = Console.ReadLine();
-Console.WriteLine(input);
-/*---------------------------------------------------------------*/
-
-var firstName = "Ольга";
+﻿var firstName = "Ольга";
 var lastName = "Афонина";
 var middleName = "Геннадьевна";
 var job = "Программист";
 
 // Конкатенация строк
 Console.WriteLine(lastName + firstName + middleName + job);
-Console.ReadKey();
 
 Console.WriteLine(lastName + " " + firstName + " " + middleName + " " + job);
-Console.ReadKey();
 
 Console.WriteLine("Имя: " + firstName + " Фамилия: " + lastName + " Отчество: " + middleName + " Профессия: " + job);
-Console.ReadKey();
 
 Console.WriteLine("Фамилия: {0} Имя: {1} Отчество: {2} Профессия: {3}",
 					lastName,
 					firstName,
 					middleName,
 					job);
-Console.ReadKey();
 
 string pattern = "Фамилия: {0} Имя: {1} Отчество: {2} Профессия: {3}";
 Console.WriteLine(pattern,
@@ -61,9 +50,6 @@ Console.WriteLine($"Фамилия: {lastName}\n Имя: {firstName}\n Отче�
 
 #region Калькулятор
 
-Console.ReadKey();
-Console.Clear();
-
 int a = 100;
 int b = 11;
 Console.WriteLine($"{a} + {b} = {a + b}");
@@ -71,9 +57,6 @@ Console.WriteLine($"{a} + {b} = {a + b}");
 #endregion
 
 #region База данных v 1.0
-
-Console.ReadKey(); 
-Console.Clear();
 
 string name1 = "Агата", lastName1 = "Лебедева";
 string name2 = "Аделаида", lastName2 = "Виноградова";
@@ -92,8 +75,6 @@ Console.WriteLine($"{name5} {lastName5}");
 
 #region База данных v 2.0
 
-Console.ReadKey(); Console.Clear();
-
 Console.WriteLine($"{name1,10} {lastName1,11}");
 Console.WriteLine($"{name2,10} {lastName2,11}");
 Console.WriteLine($"{name3,10} {lastName3,11}");
@@ -102,7 +83,7 @@ Console.WriteLine($"{name5,10} {lastName5,11}");
 
 #endregion
 
-#region Вывод чисел
+#region Настраиваемые форматы
 
 double d = 123456.654321;
 Console.WriteLine(d);                       // 123456.654321
@@ -133,10 +114,66 @@ Console.WriteLine();
 var date = new DateTime(2025, 09, 28, 01, 30, 59);
 Console.WriteLine(date);
 
-Console.ReadKey();
 Console.WriteLine($"{date:HH:mm}");
 Console.WriteLine($"{date:yyyy-MM-dd}");
 Console.WriteLine($"{date:yy.MM.dd}");
 Console.WriteLine($"{date:dd.MM.yyy}");
 
 #endregion
+
+#region Денежные единицы
+
+//C/c
+//Задает формат денежной единицы, указывает количество десятичных разрядов после запятой
+
+double number = 23.7;
+string money = string.Format("{0:C0}", number);
+Console.WriteLine(money); // 24 р.
+money = string.Format("{0:C2}", number);
+Console.WriteLine(money); // 23,70 р.
+
+#endregion
+
+#region Целые числа
+
+//D/d
+//Целочисленный формат, указывает минимальное количество цифр
+
+int digit = 23;
+string intValue1 = string.Format("{0:d}", digit);
+Console.WriteLine(intValue1); // 23
+string intValue2 = string.Format("{0:d4}", digit);
+Console.WriteLine(intValue2); // 0023
+
+#endregion
+
+//E/e
+//Экспоненциальное представление числа, указывает количество десятичных разрядов после запятой
+
+var exp = 20_000.65;
+Console.WriteLine($"{exp:e2}");
+
+//F/f
+//Формат дробных чисел с фиксированной точкой, указывает количество десятичных разрядов после запятой
+var fraction = 40.8857;
+Console.WriteLine($"{fraction:f2}");
+
+//G/g
+//Задает более короткий из двух форматов: F или E (автоматически выбирает)
+var g = 20.05;
+Console.WriteLine($"{g:g1}");
+
+//N/n
+//Также задает формат дробных чисел с фиксированной точкой, определяет количество разрядов после запятой
+var n = 50.63;
+Console.WriteLine($"{n:N5}");
+
+//P/p
+//Задает отображения знака процентов рядом с число, указывает количество десятичных разрядов после запятой
+var p = 0.69;
+Console.WriteLine($"{p:p1}");
+
+//X/x
+//Шестнадцатеричный формат числа
+var x = 65855;
+Console.WriteLine($"{x:X}");
