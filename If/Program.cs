@@ -246,3 +246,5 @@ var result = dayIndex switch
 Console.WriteLine(result);
 
 #endregion
+
+// break и continue
