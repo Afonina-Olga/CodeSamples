@@ -1,6 +1,6 @@
 ﻿// https://metanit.com/sharp/tutorial/2.2.php
 
-#region Тиды данных
+#region Типы данных
 
 // byte от 0 до 255
 // ushort от 0 до 65535
