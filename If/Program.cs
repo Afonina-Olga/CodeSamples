@@ -93,6 +93,17 @@ int x = 3;
 int y = 2;
 
 int z = x < y ? (x + y) : (x - y);
+
+//int z;
+//if (x < y)
+//{
+//	z = x + y;
+//}
+//else
+//{
+//	z = x - y;
+//}
+
 Console.WriteLine(z);   // 1
 
 #endregion
@@ -240,11 +251,9 @@ var result = dayIndex switch
 	5 => "Пятница",
 	6 => "Суббота",
 	7 => "Воскресение",
-	_ => "Нет такого дня недели на этой планете" 
+	_ => "Нет такого дня недели на этой планете"
 };
 
 Console.WriteLine(result);
 
 #endregion
-
-// break и continue
