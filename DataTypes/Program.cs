@@ -54,6 +54,10 @@ int _number = 1_000_000_000;
 float floatVariable = 3.14f;
 double doubleVariable = 3.14;
 decimal decimalVariable = 3.14M;
+var str = "Машинное округление: " + (0.1m + 0.2m);
+Console.WriteLine(str);
+
+var variable = 10;
 
 // Тип float принимает значения От ±1,5 x 10^(−45) до ±3,4 x 10^38 точность - 7 цифр
 
@@ -98,6 +102,13 @@ flag = false;       // переменной flag присвоить ложь
 
 string word = "Привет!";
 word = "Привет, мир!";
+var singleSymbol = "s";
+
+for (int i = 0; i < word.Length; i++)
+{
+	var current = word[i];
+	Console.WriteLine(current);
+}
 
 #endregion
 /* На практике достаточно int, long, double, decimal, char, string, bool*/

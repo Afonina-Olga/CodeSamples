@@ -64,22 +64,21 @@ string name3 = "Алима", lastName3 = "Попова";
 string name4 = "Катя", lastName4 = "Калинина";
 string name5 = "Рената", lastName5 = "Иванова";
 
-Console.WriteLine($"{name1} {lastName1}");
+Console.WriteLine($"{name1} {lastName1}"); // Console.WriteLine(name1 + " " + lastName1);
 Console.WriteLine($"{name2} {lastName2}");
 Console.WriteLine($"{name3} {lastName3}");
 Console.WriteLine($"{name4} {lastName4}");
 Console.WriteLine($"{name5} {lastName5}");
 
-
 #endregion
 
 #region База данных v 2.0
 
-Console.WriteLine($"{name1,10} {lastName1,11}");
-Console.WriteLine($"{name2,10} {lastName2,11}");
-Console.WriteLine($"{name3,10} {lastName3,11}");
-Console.WriteLine($"{name4,10} {lastName4,11}");
-Console.WriteLine($"{name5,10} {lastName5,11}");
+Console.WriteLine($"{name1,20} {lastName1,20}");
+Console.WriteLine($"{name2,20} {lastName2,20}");
+Console.WriteLine($"{name3,20} {lastName3,20}");
+Console.WriteLine($"{name4,20} {lastName4,20}");
+Console.WriteLine($"{name5,20} {lastName5,20}");
 
 #endregion
 
@@ -92,6 +91,8 @@ string dFormated = d.ToString("#.###");
 Console.WriteLine(dFormated);               // 123456,654
 
 Console.WriteLine("{0:0.000}", d);          // 123456,654
+Console.WriteLine($"{d:0.000}");
+Console.WriteLine($"{d:#.###}");
 
 Console.WriteLine(d.ToString("#.###"));     // 123456,654
 
@@ -113,7 +114,6 @@ Console.WriteLine("{0:000 000 000.000 000 000}", d); // 000 123 456,654 321 000
 Console.WriteLine();
 var date = new DateTime(2025, 09, 28, 01, 30, 59);
 Console.WriteLine(date);
-
 Console.WriteLine($"{date:HH:mm}");
 Console.WriteLine($"{date:yyyy-MM-dd}");
 Console.WriteLine($"{date:yy.MM.dd}");

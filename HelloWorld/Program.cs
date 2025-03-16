@@ -10,4 +10,8 @@
 Но метод Main является обязательной частью консольного приложения.
 Подробная информация: https://metanit.com/sharp/tutorial/1.4.php
 */
+
+using ClassLibrary1;
+
 Console.WriteLine("Hello, World!");
+var cl = new Class1();
